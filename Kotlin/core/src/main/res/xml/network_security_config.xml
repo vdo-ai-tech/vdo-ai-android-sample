@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">191.1.1.0</domain>
+        <domain includeSubdomains="true">vdo.ai</domain>
+        <domain includeSubdomains="true">doubleclick.net</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+        <domain includeSubdomains="true">google-analytics.com</domain>
+        <domain includeSubdomains="true">targetingv1.vdo.ai</domain>
+    </domain-config>
+
+    <debug-overrides>
+        <trust-anchors>
+            <!-- Trust user added CAs while debuggable only -->
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+
+<!--
+
+    &lt;!&ndash;Trust user added CAs while release only&ndash;&gt; &ndash;&gt;
+    <base-config>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+
+-->
+
+</network-security-config>

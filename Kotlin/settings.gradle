@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        //required only for example-applovin and example-sdk
+        maven { url = uri("https://artifacts.applovin.com/android") }
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+        //required only for example-ironsource and example-sdk
+        maven { url "https://android-sdk.is.com/"}
+    }
+}
+
+rootProject.name = "Kotlin"
+include ':core'
+include ':example-applovin'
+include ':example-ironsource'
+include ':example-mediation-bidder'
+include ':example-sdk'

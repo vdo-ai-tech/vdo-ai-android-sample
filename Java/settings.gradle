@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        //required only for example-applovin and example-sdk
+        maven { url = uri("https://artifacts.applovin.com/android") }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+        //required only for example-ironsource and example-sdk
+        maven { url "https://android-sdk.is.com/"}
+    }
+}
+
+rootProject.name = "Java"
+include ':app'
+include ':applovin'
+include ':ironsource'
+include ':sdk'
+include ':mediation-bidder'
+

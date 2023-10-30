@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/banner_ad"
+        android:title="Banner Ads"/>
+
+    <item
+        android:id="@+id/interstitialAd"
+        android:title="Interstitial Ad"/>
+
+    <item
+        android:id="@+id/rewarded_videoAd"
+        android:title="Rewarded Video Ad"/>
+
+    <item
+        android:id="@+id/native_template_ad"
+        android:title="Native Ad" />
+    
+</menu>

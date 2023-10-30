@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <vdo.ai.android.core.nativeAd.TemplateView
+        android:id="@+id/template_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gnt_template="@layout/gnt_small_template_view"
+        android:visibility="gone"/>
+
+
+    <vdo.ai.android.core.nativeAd.TemplateView
+        android:id="@+id/template_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/gnt_default_margin"
+        app:gnt_template="@layout/gnt_medium_template_view"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
