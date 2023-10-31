@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import vdo.ai.android.core.listeners.VdoNativeAdAdListener
+import vdo.ai.android.core.listeners.VdoNativeTemplateAdListener
 import vdo.ai.android.core.models.VdoAdError
 import vdo.ai.android.core.utils.VdoMediaAspectRatio
 import vdo.ai.android.core.utils.gone
@@ -63,7 +63,7 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setTagName("in-app-sample-n-Z1")
             .setMediaAspectRatio(VdoMediaAspectRatio.PORTRAIT)
             .setBackgroundColor(R.color.white)
-            .setListener(object : VdoNativeAdAdListener {
+            .setListener(object : VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
                     Log.d(TAG, "IronSource NativeAd onAdLoaded >>>>>>>>> ")
@@ -101,7 +101,7 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setTagName("in-app-sample-n-Z1")
             .setMediaAspectRatio(VdoMediaAspectRatio.PORTRAIT)
             .setBackgroundColor(R.color.white)
-            .setListener(object :  VdoNativeAdAdListener {
+            .setListener(object :  VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
                     Log.d(TAG, "IronSource NativeAd onAdLoaded >>>>>>>>> ")

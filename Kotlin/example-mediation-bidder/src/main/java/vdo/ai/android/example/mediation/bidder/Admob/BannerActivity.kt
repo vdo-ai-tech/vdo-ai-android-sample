@@ -23,6 +23,7 @@ class BannerActivity : AppCompatActivity() {
         binding = ActivityBannerBinding.inflate(layoutInflater)
         setContentView(binding?.root)
         example()
+
     }
 
     private fun example() {
@@ -44,7 +45,7 @@ class BannerActivity : AppCompatActivity() {
             override fun onAdFailedToLoad(loadAdError: LoadAdError) {
                 super.onAdFailedToLoad(loadAdError)
                 Log.e(TAG, "failed to load banner :$loadAdError")
-                Toast.makeText(getApplicationContext(), "Failed to show Ad", Toast.LENGTH_LONG)
+                Toast.makeText(applicationContext, "Failed to show Ad", Toast.LENGTH_LONG)
                     .show()
             }
 

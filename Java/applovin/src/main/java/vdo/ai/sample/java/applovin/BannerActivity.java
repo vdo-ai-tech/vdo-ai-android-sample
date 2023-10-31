@@ -73,10 +73,6 @@ public class BannerActivity extends AppCompatActivity {
                                         binding.textView.setText(builder.toString());
                                 }
 
-                                @Override
-                                public void onMediationSuccess() {
-                                }
-
                         }).build();
         }
 

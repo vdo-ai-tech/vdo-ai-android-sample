@@ -57,11 +57,6 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                 .setListener(new VdoNativeTemplateAdListener() {
 
                     @Override
-                    public void forNativeAd(@NonNull NativeAd nativeAd) {
-
-                    }
-
-                    @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {
 
                     }
@@ -102,12 +97,6 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                 .setMediaAspectRatio(VdoMediaAspectRatio.PORTRAIT)
                 .setBackgroundColor(R.color.gnt_white)
                 .setListener(new VdoNativeTemplateAdListener() {
-
-                    @Override
-                    public void forNativeAd(@NonNull NativeAd nativeAd) {
-
-                    }
-
                     @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {
 

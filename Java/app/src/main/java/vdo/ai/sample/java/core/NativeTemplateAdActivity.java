@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.ads.nativead.NativeAd;
 
 import vdo.ai.android.core.VdoNativeTemplateAd;
-import vdo.ai.android.core.listeners.VdoNativeAdAdListener;
 import vdo.ai.android.core.listeners.VdoNativeTemplateAdListener;
 import vdo.ai.android.core.models.VdoAdError;
 import vdo.ai.android.core.utils.VdoMediaAspectRatio;
@@ -62,11 +61,6 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                 .setListener(new VdoNativeTemplateAdListener() {
 
                     @Override
-                    public void forNativeAd(@NonNull NativeAd nativeAd) {
-
-                    }
-
-                    @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {
 
                     }
@@ -106,11 +100,6 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                 .setMediaAspectRatio(VdoMediaAspectRatio.PORTRAIT)
                 .setBackgroundColor(vdo.ai.android.core.R.color.gnt_white)
                 .setListener(new VdoNativeTemplateAdListener() {
-
-                    @Override
-                    public void forNativeAd(@NonNull NativeAd nativeAd) {
-
-                    }
 
                     @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {

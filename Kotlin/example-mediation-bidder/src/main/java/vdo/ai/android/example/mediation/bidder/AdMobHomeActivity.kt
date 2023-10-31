@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import vdo.ai.android.example.mediation.bidder.AdManager.BannerActivity
-import vdo.ai.android.example.mediation.bidder.AdManager.InterstitialActivity
-import vdo.ai.android.example.mediation.bidder.AdManager.RewardedInterstitialActivity
-import vdo.ai.android.example.mediation.bidder.AdManager.RewardedVideoActivity
+import vdo.ai.android.example.mediation.bidder.Admob.BannerActivity
+import vdo.ai.android.example.mediation.bidder.Admob.InterstitialActivity
+import vdo.ai.android.example.mediation.bidder.Admob.RewardedInterstitialActivity
+import vdo.ai.android.example.mediation.bidder.Admob.RewardedVideoActivity
 import vdo.ai.android.example.mediation.bidder.databinding.ActivityAdMobHomeBinding
 
 class AdMobHomeActivity : AppCompatActivity() {

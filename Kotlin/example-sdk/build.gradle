@@ -69,8 +69,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'org.bitbucket.ozock.vdo-ai-android:core:0.0.22'
-    implementation 'org.bitbucket.ozock.vdo-ai-android:applovin:0.0.22'
-    implementation 'org.bitbucket.ozock.vdo-ai-android:sdk:0.0.22'
+    implementation 'org.bitbucket.ozock.vdo-ai-android:core:0.0.23'
+    implementation 'org.bitbucket.ozock.vdo-ai-android:applovin:0.0.23'
+    implementation 'org.bitbucket.ozock.vdo-ai-android:sdk:0.0.23'
 
 }

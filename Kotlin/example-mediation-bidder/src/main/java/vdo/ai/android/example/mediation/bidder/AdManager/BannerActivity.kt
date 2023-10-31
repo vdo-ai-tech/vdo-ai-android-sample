@@ -22,8 +22,8 @@ class BannerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityBannerBinding.inflate(getLayoutInflater())
-        setContentView(binding?.getRoot())
+        binding = ActivityBannerBinding.inflate(layoutInflater)
+        setContentView(binding?.root)
         example()
     }
 

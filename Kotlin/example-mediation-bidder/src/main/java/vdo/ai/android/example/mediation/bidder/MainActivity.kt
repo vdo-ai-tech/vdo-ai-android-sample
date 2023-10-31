@@ -9,9 +9,9 @@ class MainActivity : AppCompatActivity() {
     var binding: ActivityMainBinding? = null
     protected override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(getLayoutInflater())
-        setContentView(binding?.getRoot())
-        binding?.adManager?.setOnClickListener { v ->
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding?.root)
+        binding?.adManager?.setOnClickListener {
             startActivity(
                 Intent(
                     this,
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
                 )
             )
         }
-        binding?.admob?.setOnClickListener { v ->
+        binding?.admob?.setOnClickListener {
             startActivity(
                 Intent(
                     this,
