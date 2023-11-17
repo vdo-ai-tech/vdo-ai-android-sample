@@ -57,6 +57,11 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                 .setListener(new VdoNativeTemplateAdListener() {
 
                     @Override
+                    public void onAdOpened() {
+
+                    }
+
+                    @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {
 
                     }
@@ -99,6 +104,11 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                 .setListener(new VdoNativeTemplateAdListener() {
                     @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {
+
+                    }
+
+                    @Override
+                    public void onAdOpened() {
 
                     }
 

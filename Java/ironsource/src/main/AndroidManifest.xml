@@ -34,6 +34,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <activity android:name=".NativeAdActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">

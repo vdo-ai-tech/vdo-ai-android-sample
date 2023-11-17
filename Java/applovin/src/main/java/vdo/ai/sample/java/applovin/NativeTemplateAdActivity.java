@@ -67,6 +67,11 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
                     }
 
                     @Override
+                    public void onAdOpened() {
+
+                    }
+
+                    @Override
                     public void onAdClicked() {
 
                     }
@@ -104,6 +109,11 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
 
                     @Override
                     public void onAdFailedToLoad(@Nullable VdoAdError vdoAdError) {
+
+                    }
+
+                    @Override
+                    public void onAdOpened() {
 
                     }
 

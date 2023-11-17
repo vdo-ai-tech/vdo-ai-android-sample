@@ -47,5 +47,5 @@ dependencies {
     // Dependencies required for Ads
     implementation 'com.google.android.gms:play-services-ads:22.4.0'
     //Mediation dependency for setup bridge b/w Google and VDO.AI Ads service
-    implementation 'org.bitbucket.ozock.vdo-ai-android:mediation-bidder:0.0.23'
+    implementation 'org.bitbucket.ozock.vdo-ai-android:mediation-bidder:0.0.31'
 }

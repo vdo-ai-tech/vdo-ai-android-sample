@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, RewardedVideoActivity.class));
         } else if (itemId == R.id.native_template_ad) {
             startActivity(new Intent(this, NativeTemplateAdActivity.class));
+        }else if (itemId == R.id.native_ad) {
+            startActivity(new Intent(this, NativeAdActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
