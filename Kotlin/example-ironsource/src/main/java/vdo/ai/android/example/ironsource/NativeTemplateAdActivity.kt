@@ -68,7 +68,10 @@ class NativeTemplateAdActivity : AppCompatActivity() {
                 override fun onAdLoaded() {
                     Log.d(TAG, "IronSource NativeAd onAdLoaded >>>>>>>>> ")
                 }
+                override fun onAdOpened() {
+                    Log.d(TAG, "IronSource NativeAd onAdOpened >>>>>>>>> ")
 
+                }
                 override fun onAdImpression() {
                     Log.d(TAG, "IronSource NativeAd onAdImpression >>>>>>>>> ")
                 }
@@ -107,7 +110,10 @@ class NativeTemplateAdActivity : AppCompatActivity() {
                     Log.d(TAG, "IronSource NativeAd onAdLoaded >>>>>>>>> ")
 
                 }
+                override fun onAdOpened() {
+                    Log.d(TAG, "IronSource NativeAd onAdOpened >>>>>>>>> ")
 
+                }
                 override fun onAdImpression() {
                     Log.d(TAG, "IronSource NativeAd onAdImpression >>>>>>>>> ")
 

@@ -58,6 +58,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent2)
                 return true
             }
+
+            R.id.native_ad -> {
+                val intent2 = Intent(this@MainActivity, NativeAdActivity::class.java)
+                startActivity(intent2)
+                return true
+            }
 //            R.id.reward_interstitialAd ->{
 //                startActivity(Intent(this@MainActivity, RewardInterstitialAdActivity::class.java))
 //                return true

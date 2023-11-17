@@ -53,11 +53,18 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
 
+            R.id.native_ad ->{
+                val intent2 = Intent(this@MainActivity, NativeAdActivity::class.java)
+                startActivity(intent2)
+                return true
+            }
+
             R.id.native_template_ad ->{
                 val intent2 = Intent(this@MainActivity, NativeTemplateAdActivity::class.java)
                 startActivity(intent2)
                 return true
             }
+
             R.id.reward_interstitialAd ->{
                 startActivity(Intent(this@MainActivity, RewardInterstitialAdActivity::class.java))
                 return true
@@ -69,6 +76,5 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-
 
 }

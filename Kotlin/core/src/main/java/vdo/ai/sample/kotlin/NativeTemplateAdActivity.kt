@@ -72,6 +72,10 @@ class NativeTemplateAdActivity : AppCompatActivity() {
                     Log.d(TAG, "GAM smallNativeAd onAdLoaded >>>>>>>>> ")
                 }
 
+                override fun onAdOpened() {
+                    Log.d(TAG, "GAM smallNativeAd onAdOpened >>>>>>>>> ")
+
+                }
                 override fun onAdImpression() {
                     Log.d(TAG, "GAM smallNativeAd onAdImpression >>>>>>>>> ")
 
@@ -112,6 +116,10 @@ class NativeTemplateAdActivity : AppCompatActivity() {
 
                 override fun onAdLoaded() {
                     Log.d(TAG, "GAM mediumNativeAd onAdLoaded >>>>>>>>> ")
+
+                }
+                override fun onAdOpened() {
+                    Log.d(TAG, "GAM mediumNativeAd onAdOpened >>>>>>>>> ")
 
                 }
 

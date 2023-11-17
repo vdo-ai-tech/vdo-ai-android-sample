@@ -69,6 +69,11 @@ class NativeTemplateAdActivity : AppCompatActivity() {
                     Log.d(TAG, "Applovin NativeAd onAdLoaded >>>>>>>>> ")
                 }
 
+                override fun onAdOpened() {
+                    Log.d(TAG, "Applovin NativeAd onAdOpened >>>>>>>>> ")
+
+                }
+
                 override fun onAdImpression() {
                     Log.d(TAG, "Applovin NativeAd onAdImpression >>>>>>>>> ")
                 }
@@ -108,7 +113,10 @@ class NativeTemplateAdActivity : AppCompatActivity() {
                     Log.d(TAG, "Applovin NativeAd onAdLoaded >>>>>>>>> ")
 
                 }
+                override fun onAdOpened() {
+                    Log.d(TAG, "Applovin NativeAd onAdOpened >>>>>>>>> ")
 
+                }
                 override fun onAdImpression() {
                     Log.d(TAG, "Applovin NativeAd onAdImpression >>>>>>>>> ")
 
