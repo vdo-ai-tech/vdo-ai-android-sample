@@ -9,7 +9,7 @@ import vdo.ai.android.core.models.VdoAdError
 import vdo.ai.android.example.applovin.databinding.ActivityRewardedVideoBinding
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class RewardedVideoActivity : AppCompatActivity() {
@@ -35,35 +35,27 @@ class RewardedVideoActivity : AppCompatActivity() {
             .setListener( object : VdoRewardedListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "Applovin onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "Applovin onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "Applovin onAdFailedToLoad $adError>>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "Applovin onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "Applovin onAdDismissedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "Applovin onAdFailedToShowFullScreenContent $adError>>>>>>>>> ")
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "Applovin onAdShowedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onUserEarnedReward(amount: Int, type: String) {
-                    Log.d(TAG, "Applovin onUserEarnedReward amount: $amount>>>>>>>>> ")
                 }
 
             }).build()

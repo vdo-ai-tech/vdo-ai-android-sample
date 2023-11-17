@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import vdo.ai.sample.kotlin.databinding.ActivityMainBinding
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class MainActivity : AppCompatActivity() {

@@ -27,42 +27,27 @@ class RewardedVideoActivity : AppCompatActivity() {
             .setListener( object : VdoRewardedListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "rewardedVideoAd onAdLoaded >>>>>>>>> ")
-
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "rewardedVideoAd onAdImpression >>>>>>>>> ")
-
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "rewardedVideoAd onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "rewardedVideoAd onAdClicked >>>>>>>>> ")
-
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "rewardedVideoAd onAdDismissedFullScreenContent >>>>>>>>> ")
-
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "rewardedVideoAd onAdFailedToShowFullScreenContent $adError>>>>>>>>> ")
-
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "rewardedVideoAd onAdShowedFullScreenContent >>>>>>>>> ")
-
                 }
 
                 override fun onUserEarnedReward(amount: Int, type: String) {
-                    Log.d(TAG, "rewardedVideoAd onUserEarnedReward amount : $amount >>>>>>>>> ")
                 }
 
             }).build()

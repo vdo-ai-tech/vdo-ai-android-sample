@@ -10,7 +10,7 @@ import vdo.ai.android.core.utils.VdoAdSize
 import vdo.ai.android.example.applovin.databinding.ActivityBannerBinding
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class BannerActivity : AppCompatActivity() {

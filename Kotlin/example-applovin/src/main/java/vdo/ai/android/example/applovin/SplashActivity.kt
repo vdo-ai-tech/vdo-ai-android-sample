@@ -11,7 +11,7 @@ import vdo.ai.android.example.applovin.application.MyApplication
 import vdo.ai.android.example.applovin.databinding.ActivitySplashBinding
 
 /**
- *  created by Ashish Saini at 6th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class SplashActivity : AppCompatActivity() {

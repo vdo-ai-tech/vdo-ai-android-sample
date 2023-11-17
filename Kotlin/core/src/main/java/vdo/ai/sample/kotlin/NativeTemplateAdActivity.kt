@@ -15,7 +15,7 @@ import vdo.ai.sample.kotlin.databinding.ActivityNativeTemplateAdBinding
 
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class NativeTemplateAdActivity : AppCompatActivity() {
@@ -69,33 +69,17 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object :  VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "GAM smallNativeAd onAdLoaded >>>>>>>>> ")
                 }
-
                 override fun onAdOpened() {
-                    Log.d(TAG, "GAM smallNativeAd onAdOpened >>>>>>>>> ")
-
                 }
                 override fun onAdImpression() {
-                    Log.d(TAG, "GAM smallNativeAd onAdImpression >>>>>>>>> ")
-
                 }
-
                 override fun onAdClosed() {
-                    Log.d(TAG, "GAM smallNativeAd onAdClosed >>>>>>>>> ")
-
                 }
-
                 override fun onAdClicked() {
-                    Log.d(TAG, "GAM smallNativeAd onAdClicked >>>>>>>>> ")
-
                 }
-
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "GAM smallNativeAd onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
-
             }).build()
     }
 
@@ -115,32 +99,16 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object :  VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "GAM mediumNativeAd onAdLoaded >>>>>>>>> ")
-
                 }
                 override fun onAdOpened() {
-                    Log.d(TAG, "GAM mediumNativeAd onAdOpened >>>>>>>>> ")
-
                 }
-
                 override fun onAdImpression() {
-                    Log.d(TAG, "GAM mediumNativeAd onAdImpression >>>>>>>>> ")
-
                 }
-
                 override fun onAdClosed() {
-                    Log.d(TAG, "GAM mediumNativeAd onAdClosed >>>>>>>>> ")
-
                 }
-
                 override fun onAdClicked() {
-                    Log.d(TAG, "GAM mediumNativeAd onAdClicked >>>>>>>>> ")
-
                 }
-
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "GAM mediumNativeAd onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
 
             }).build()

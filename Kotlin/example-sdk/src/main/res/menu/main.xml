@@ -15,20 +15,21 @@
         android:title="Rewarded Video Ad"/>
 
     <item
-        android:id="@+id/reward_interstitialAd"
-        android:title="Reward InterstitialAd"/>
+        android:id="@+id/native_ad"
+        android:title="Native Ad" />
 
     <item
         android:id="@+id/native_template_ad"
-        android:title="Native Ad" />
+        android:title="Native Template Ad" />
 
-
-
+    <item
+        android:id="@+id/reward_interstitialAd"
+        android:title="Reward InterstitialAd"/>
     <!--
-          <item
-              android:id="@+id/video_player_ads"
-              android:title="Video Player Ads "/>
-     -->
+         <item
+             android:id="@+id/video_player_ads"
+             android:title="Video Player Ads "/>
+    -->
 
 
 </menu>

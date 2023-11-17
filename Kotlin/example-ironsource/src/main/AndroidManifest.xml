@@ -49,6 +49,11 @@
             android:name="vdo.ai.android.example.ironsource.RewardedVideoActivity"
             android:exported="false" />
 
+        <activity
+            android:name="vdo.ai.android.example.ironsource.NativeAdActivity"
+            android:exported="false" />
+
+
 
         <!-- Sample Ad Manager app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data

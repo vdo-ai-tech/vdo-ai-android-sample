@@ -66,26 +66,20 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object : VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "IronSource NativeAd onAdLoaded >>>>>>>>> ")
                 }
                 override fun onAdOpened() {
-                    Log.d(TAG, "IronSource NativeAd onAdOpened >>>>>>>>> ")
 
                 }
                 override fun onAdImpression() {
-                    Log.d(TAG, "IronSource NativeAd onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "IronSource NativeAd onAdClosed >>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "IronSource NativeAd onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "IronSource NativeAd onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
             }).build()
@@ -107,31 +101,21 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object :  VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "IronSource NativeAd onAdLoaded >>>>>>>>> ")
 
                 }
                 override fun onAdOpened() {
-                    Log.d(TAG, "IronSource NativeAd onAdOpened >>>>>>>>> ")
 
                 }
                 override fun onAdImpression() {
-                    Log.d(TAG, "IronSource NativeAd onAdImpression >>>>>>>>> ")
-
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "IronSource NativeAd onAdClosed >>>>>>>>> ")
-
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "IronSource NativeAd onAdClicked >>>>>>>>> ")
-
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "IronSource NativeAd onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
 
             }).build()

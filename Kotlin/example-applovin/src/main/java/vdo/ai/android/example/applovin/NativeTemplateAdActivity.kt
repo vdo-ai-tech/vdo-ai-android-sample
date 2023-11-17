@@ -14,7 +14,7 @@ import vdo.ai.android.core.utils.visible
 import vdo.ai.android.example.applovin.databinding.ActivityNativeTemplateAdBinding
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class NativeTemplateAdActivity : AppCompatActivity() {
@@ -66,28 +66,21 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object : VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "Applovin NativeAd onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdOpened() {
-                    Log.d(TAG, "Applovin NativeAd onAdOpened >>>>>>>>> ")
-
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "Applovin NativeAd onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "Applovin NativeAd onAdClosed >>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "Applovin NativeAd onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "Applovin NativeAd onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
             }).build()
@@ -110,31 +103,19 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object : VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "Applovin NativeAd onAdLoaded >>>>>>>>> ")
-
                 }
                 override fun onAdOpened() {
-                    Log.d(TAG, "Applovin NativeAd onAdOpened >>>>>>>>> ")
-
                 }
                 override fun onAdImpression() {
-                    Log.d(TAG, "Applovin NativeAd onAdImpression >>>>>>>>> ")
-
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "Applovin NativeAd onAdClosed >>>>>>>>> ")
-
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "Applovin NativeAd onAdClicked >>>>>>>>> ")
-
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "Applovin NativeAd onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
 
             }).build()

@@ -9,13 +9,12 @@ import vdo.ai.android.core.models.VdoAdError
 import vdo.ai.android.example.applovin.BuildConfig
 
 /**
- *  created by Ashish Saini at 6th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class MyApplication : Application() {
 
     var appOpenAd:VdoApplovinAppOpen?=null
-    var TAG = MyApplication:: class.java.simpleName
 
     override fun onCreate() {
         super.onCreate()
@@ -28,23 +27,18 @@ class MyApplication : Application() {
 
             .setListener(object : VdoAppOpenListener {
                 override fun onAdLoaded() {
-                    Log.d(TAG, "Applovin onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "Applovin onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "Applovin onAdDismissedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "Applovin onAdShowedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "Applovin onAdFailedToShowFullScreenContent $adError >>>>>>>>> ")
                 }
 
             }).build()

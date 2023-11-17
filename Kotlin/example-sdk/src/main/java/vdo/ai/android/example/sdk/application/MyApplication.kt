@@ -16,7 +16,6 @@ import vdo.ai.android.sdk.VdoAIAppOpen
 class MyApplication : Application() {
 
     var appOpenAd:VdoAIAppOpen?=null
-    private var TAG = MyApplication:: class.java.simpleName
 
     override fun onCreate() {
         super.onCreate()
@@ -29,23 +28,18 @@ class MyApplication : Application() {
             .setIronSourceParams(ironSourceOfferApiKey, "DefaultOfferWall")
             .setListener(object : VdoAppOpenListener {
                 override fun onAdLoaded() {
-                    Log.d(TAG, "VdoAIAppOpen onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "VdoAIAppOpen onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "VdoAIAppOpen onAdDismissedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "VdoAIAppOpen onAdShowedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "VdoAIAppOpen onAdFailedToShowFullScreenContent $adError >>>>>>>>> ")
                 }
             }).build()
 

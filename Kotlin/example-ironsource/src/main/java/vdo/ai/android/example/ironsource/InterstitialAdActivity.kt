@@ -8,11 +8,10 @@ import vdo.ai.android.core.models.VdoAdError
 import vdo.ai.android.ironsource.VdoIronSourceInterstitial
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class InterstitialAdActivity : AppCompatActivity() {
-    var TAG= InterstitialAdActivity :: class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,31 +30,24 @@ class InterstitialAdActivity : AppCompatActivity() {
             .setAllowRefresh(false)
             .setListener( object : VdoInterstitialListener {
                 override fun onAdLoaded() {
-                    Log.d(TAG, "IronSource onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "IronSource onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "IronSource onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "IronSource onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "IronSource onAdDismissedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "IronSource onAdFailedToShowFullScreenContent $adError >>>>>>>>> ")
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "IronSource onAdShowedFullScreenContent >>>>>>>>> ")
                 }
             }).build()
     }

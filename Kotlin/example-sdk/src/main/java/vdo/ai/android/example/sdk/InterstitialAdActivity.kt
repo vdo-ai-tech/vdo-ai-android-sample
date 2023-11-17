@@ -8,11 +8,10 @@ import vdo.ai.android.core.models.VdoAdError
 import vdo.ai.android.sdk.VdoAIInterstitial
 
 /**
- *  created by Ashish Saini at 9th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class InterstitialAdActivity : AppCompatActivity() {
-    var TAG = InterstitialAdActivity :: class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,31 +31,24 @@ class InterstitialAdActivity : AppCompatActivity() {
             .setIronSourceParams(ironSourceApiKey,"DefaultInterstitial")
             .setListener( object : VdoInterstitialListener {
                 override fun onAdLoaded() {
-                    Log.d(TAG, "interstitialAd onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "interstitialAd onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "interstitialAd onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "interstitialAd onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "interstitialAd onAdDismissedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "interstitialAd onAdFailedToShowFullScreenContent $adError >>>>>>>>> ")
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "interstitialAd onAdShowedFullScreenContent >>>>>>>>> ")
                 }
             }).build()
     }

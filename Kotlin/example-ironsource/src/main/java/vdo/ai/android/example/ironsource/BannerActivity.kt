@@ -10,7 +10,7 @@ import vdo.ai.android.ironsource.VdoIronSourceBanner
 import vdo.ai.android.ironsource.utils.VdoIronSourceUtils
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 const val ironSourceApiKey :String="85460dcd"

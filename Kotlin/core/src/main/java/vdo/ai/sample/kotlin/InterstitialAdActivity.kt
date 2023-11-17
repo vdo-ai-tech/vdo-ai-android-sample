@@ -8,7 +8,7 @@ import vdo.ai.android.core.listeners.VdoInterstitialListener
 import vdo.ai.android.core.models.VdoAdError
 
 /**
- *  created by Ashish Saini at 5th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class InterstitialAdActivity : AppCompatActivity() {
@@ -29,31 +29,24 @@ class InterstitialAdActivity : AppCompatActivity() {
             .setAllowRefresh(false)
             .setListener( object : VdoInterstitialListener {
                 override fun onAdLoaded() {
-                    Log.d(TAG, "GAM onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "GAM onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "GAM onAdFailedToLoad $adError>>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "GAM onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "GAM onAdDismissedFullScreenContent >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "GAM onAdFailedToShowFullScreenContent $adError>>>>>>>>> ")
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "GAM onAdShowedFullScreenContent >>>>>>>>> ")
                 }
             }).build()
     }

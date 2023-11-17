@@ -12,10 +12,14 @@ import vdo.ai.android.core.models.VdoAdError
 import vdo.ai.android.core.utils.VdoMediaAspectRatio
 import vdo.ai.sample.kotlin.databinding.ActivityNativeAdBinding
 
+/**
+ *  created by Harsh Shrivastava at 17th Nov 2023
+ *
+ **/
+
 class NativeAdActivity : AppCompatActivity() {
 
     private lateinit var  binding: ActivityNativeAdBinding
-    private var TAG = NativeAdActivity:: class.java.simpleName
     private var nativeAd : VdoNativeAd?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,34 +59,22 @@ class NativeAdActivity : AppCompatActivity() {
             .setAllowRefresh(false)
             .setListener( object : VdoNativeAdListener {
 
-//                override fun onNativeAd(nativeAd: NativeAd) {
-//                    Log.d(TAG, "GAM  onNativeAd >>>>>>>>> ")
-////                    val nativeBinding: NativeAdLayoutBinding = NativeAdLayoutBinding.inflate(layoutInflater)
-////                    populateNativeAdView(nativeAd, nativeBinding)
-//                }
-
                 override fun onAdLoaded() {
-                    Log.d(TAG, "GAM  onAdLoaded >>>>>>>>> ")
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "GAM  onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "GAM  onAdFailedToLoad >>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "GAM  onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdOpened() {
-                    Log.d(TAG, "GAM  onAdOpened >>>>>>>>> ")
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "GAM  onAdClosed >>>>>>>>> ")
                 }
             }).build()
     }

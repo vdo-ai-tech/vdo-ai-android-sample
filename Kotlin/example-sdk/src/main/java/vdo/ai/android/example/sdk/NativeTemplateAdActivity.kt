@@ -2,7 +2,6 @@ package vdo.ai.android.example.sdk
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import vdo.ai.android.core.listeners.VdoNativeTemplateAdListener
@@ -14,7 +13,6 @@ import vdo.ai.android.core.utils.visible
 import vdo.ai.android.sdk.VdoAINativeTemplateAd
 
 class NativeTemplateAdActivity : AppCompatActivity() {
-    private var TAG :String= NativeTemplateAdActivity :: class.java.simpleName
     private var templateSmall : TemplateView?=null
     private var templateMedium : TemplateView?=null
 
@@ -63,23 +61,21 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object :  VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "NativeAd onAdLoaded >>>>>>>>> ")
+                }
+
+                override fun onAdOpened() {
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "NativeAd onAdImpression >>>>>>>>> ")
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "NativeAd onAdClosed >>>>>>>>> ")
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "NativeAd onAdClicked >>>>>>>>> ")
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "NativeAd onAdFailedToLoad $adError >>>>>>>>> ")
                 }
 
             }).build()
@@ -102,28 +98,21 @@ class NativeTemplateAdActivity : AppCompatActivity() {
             .setListener(object :  VdoNativeTemplateAdListener {
 
                 override fun onAdLoaded() {
-                    Log.d(TAG, "NativeAd onAdLoaded >>>>>>>>> ")
+                }
 
+                override fun onAdOpened() {
                 }
 
                 override fun onAdImpression() {
-                    Log.d(TAG, "NativeAd onAdImpression >>>>>>>>> ")
-
                 }
 
                 override fun onAdClosed() {
-                    Log.d(TAG, "NativeAd onAdClosed >>>>>>>>> ")
-
                 }
 
                 override fun onAdClicked() {
-                    Log.d(TAG, "NativeAd onAdClicked >>>>>>>>> ")
-
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "NativeAd onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
 
             }).build()

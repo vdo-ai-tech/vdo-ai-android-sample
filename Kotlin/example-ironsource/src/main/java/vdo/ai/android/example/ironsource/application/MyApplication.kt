@@ -11,7 +11,7 @@ import vdo.ai.android.example.ironsource.ironSourceOfferApiKey
 import vdo.ai.android.ironsource.VdoIronSourceAppOpen
 
 /**
- *  created by Ashish Saini at 6th Oct 2023
+ *  created by Harsh Shrivastava at 6th Oct 2023
  *
  **/
 class MyApplication : Application() {
@@ -29,29 +29,18 @@ class MyApplication : Application() {
             .setIronSourceParams(ironSourceOfferApiKey, "DefaultOfferWall")
             .setListener(object:VdoAppOpenListener{
                 override fun onAdLoaded() {
-                    Log.d(TAG, "IronSource onAdLoaded >>>>>>>>> ")
-
                 }
 
                 override fun onAdFailedToLoad(adError: VdoAdError?) {
-                    Log.d(TAG, "IronSource onAdFailedToLoad $adError >>>>>>>>> ")
-
                 }
 
                 override fun onAdDismissedFullScreenContent() {
-                    Log.d(TAG, "IronSource onAdDismissedFullScreenContent >>>>>>>>> ")
-
                 }
 
                 override fun onAdShowedFullScreenContent() {
-                    Log.d(TAG, "IronSource onAdShowedFullScreenContent >>>>>>>>> ")
-
-
                 }
 
                 override fun onAdFailedToShowFullScreenContent(adError: VdoAdError?) {
-                    Log.d(TAG, "IronSource onAdFailedToShowFullScreenContent $adError >>>>>>>>> ")
-
                 }
 
             }).build()
