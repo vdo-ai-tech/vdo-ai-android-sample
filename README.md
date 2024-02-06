@@ -1,5 +1,5 @@
-# **Latest version **
-[!IMPORTANT]
+# Latest version 
+> [!IMPORTANT]
 > 1. org.bitbucket.ozock.vdo-ai-android:applovin:1.0.1
 > 2. org.bitbucket.ozock.vdo-ai-android:sdk:1.0.1
 > 3. org.bitbucket.ozock.vdo-ai-android:mediation-bidder:1.0.1
