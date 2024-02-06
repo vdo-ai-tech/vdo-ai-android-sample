@@ -30,7 +30,7 @@ class BannerActivity : AppCompatActivity() {
         banner = binding?.bannerAdsContainer
         banner?.removeAllViews()
         val adRequest = AdRequest.Builder().build()
-        mAdManagerAdView = AdManagerAdView(this)
+        mAdManagerAdView = AdManagerAdView(applicationContext)
         mAdManagerAdView?.setAdUnitId(mAdUnit)
         mAdManagerAdView?.setAdSize(AdSize.BANNER)
         mAdManagerAdView?.setAdListener(object : AdListener() {

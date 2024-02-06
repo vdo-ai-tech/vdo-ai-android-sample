@@ -47,7 +47,7 @@ class NativeAdActivity : AppCompatActivity() {
 
 
         nativeAd = VdoIronSourceNativeAd.VdoIronSourceNativeBuilder()
-            .withContext(this)
+            .withContext(applicationContext)
             .setEnvironment(BuildConfig.BUILD_TYPE)
             .setTagName("in-app-sample-n-Z1")
             .setNativeAdContainer(binding.nativeAdContainer)

@@ -60,7 +60,7 @@ android {
         exclude("META-INF/*.kotlin_module")
     }
 }
-def sdk_version= "0.0.32"
+def sdk_version= "1.0.1"
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.9.0'

@@ -48,7 +48,7 @@ class NativeAdActivity : AppCompatActivity() {
 
 
         nativeAd = VdoAINativeAd.VdoAINativeAdBuilder()
-            .withContext(this)
+            .withContext(applicationContext)
             .setEnvironment(BuildConfig.BUILD_TYPE)
             .setTagName("in-app-sample-n-Z1")
             .setApplovinAdUnitId("cea67968db988d18")

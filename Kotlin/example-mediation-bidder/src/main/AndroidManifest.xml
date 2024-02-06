@@ -52,9 +52,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--        APPLICATION ID CHANGE FOR ADMOB AND GOOGLE AD MANAGER according to their use-->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5626228370107604~4174370180" />
+
     </application>
 
 </manifest>

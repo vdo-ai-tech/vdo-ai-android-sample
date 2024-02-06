@@ -60,7 +60,7 @@ class NativeTemplateAdActivity : AppCompatActivity() {
         binding.templateMedium.gone()
 
         val nativeAd = VdoNativeTemplateAd.VdoNativeTemplateAdBuilder()
-            .withContext(this)
+            .withContext(applicationContext)
             .setEnvironment(BuildConfig.BUILD_TYPE)
             .setTemplateView(binding.templateSmall)
             .setTagName("in-app-sample-n-Z1")
@@ -89,7 +89,7 @@ class NativeTemplateAdActivity : AppCompatActivity() {
         binding.templateMedium.visible()
 
         val nativeAd = VdoNativeTemplateAd.VdoNativeTemplateAdBuilder()
-            .withContext(this)
+            .withContext(applicationContext)
             .setEnvironment(BuildConfig.BUILD_TYPE)
             .setTemplateView(binding.templateMedium)
             .setTagName("in-app-sample-n-Z1")

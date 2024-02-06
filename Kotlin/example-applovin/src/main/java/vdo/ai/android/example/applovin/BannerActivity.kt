@@ -29,7 +29,7 @@ class BannerActivity : AppCompatActivity() {
 
     private fun example(){
         bannerAd = VdoApplovinBanner.VdoBannerAdApplovinBuilder()
-            .withContext(this)
+            .withContext(applicationContext)
             .setEnvironment(BuildConfig.BUILD_TYPE)
             .setBannerView(binding.bannerAdsContainer)
             .setTagName("in-app-sample-b-Z1")

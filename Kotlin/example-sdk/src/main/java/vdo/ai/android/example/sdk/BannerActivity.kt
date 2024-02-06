@@ -31,11 +31,11 @@ class BannerActivity : AppCompatActivity() {
 
     private fun example(){
         bannerAd = VdoAIBanner.VdoAIBannerAdBuilder()
-            .withContext(this)
+            .withContext(applicationContext)
             .setEnvironment(BuildConfig.BUILD_TYPE)
             .setTagName("in-app-sample-b-Z1")
             .setApplovinAdUnitId("3c88e60613392442")
-            .setIronSourceParams(ironSourceApiKey,"DefaultBanner")
+            .setIronSourceParams(this,ironSourceApiKey,"DefaultBanner")
             .setBannerView(binding.bannerAdsContainer)
             .setAddSize(VdoAdSize.BANNER)
             .setAllowRefresh(false)
