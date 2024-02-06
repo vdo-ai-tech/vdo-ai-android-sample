@@ -53,7 +53,7 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
         binding.templateMedium.setVisibility(View.GONE);
 
         VdoApplovinNativeTemplate nativeAd = new VdoApplovinNativeTemplate.VdoApplovinNativeTemplateBuilder()
-                .withContext(this)
+                .withContext(this.getApplicationContext())
                 .setEnvironment(BuildConfig.BUILD_TYPE)
                 .setTemplateView(binding.templateSmall)
                 .setTagName("in-app-sample-n-Z1")
@@ -99,7 +99,7 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
         binding.templateSmall.setVisibility(View.GONE);
         binding.templateMedium.setVisibility(View.VISIBLE);
         VdoApplovinNativeTemplate nativeAd = new VdoApplovinNativeTemplate.VdoApplovinNativeTemplateBuilder()
-                .withContext(this)
+                .withContext(this.getApplicationContext())
                 .setEnvironment(BuildConfig.BUILD_TYPE)
                 .setTemplateView(binding.templateMedium)
                 .setTagName("in-app-sample-n-Z1")

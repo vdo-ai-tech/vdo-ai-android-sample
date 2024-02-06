@@ -56,8 +56,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'org.bitbucket.ozock.vdo-ai-android:core:0.0.32'
-    implementation 'org.bitbucket.ozock.vdo-ai-android:ironsource:0.0.32'
+    implementation 'org.bitbucket.ozock.vdo-ai-android:core:1.0.1'
+    implementation 'org.bitbucket.ozock.vdo-ai-android:ironsource:1.0.1'
     //Required for native template ad
     implementation 'com.google.android.gms:play-services-ads-lite:22.5.0'
 

@@ -32,11 +32,11 @@ public class BannerActivity extends AppCompatActivity {
         private void example() {
 
                 bannerAd = new VdoAIBanner.VdoAIBannerAdBuilder()
-                        .withContext(this)
+                        .withContext(this.getApplicationContext())
                         .setEnvironment(BuildConfig.BUILD_TYPE)
                         .setTagName("in-app-sample-b-Z1")
                         .setApplovinAdUnitId("3c88e60613392442")
-                        .setIronSourceParams(MyApplication.IRON_SOURCE_APP_KEY,"DefaultBanner")
+                        .setIronSourceParams(this,MyApplication.IRON_SOURCE_APP_KEY,"DefaultBanner")
                         .setBannerView(binding.bannerAdsContainer)
                         .setAddSize(VdoAdSize.BANNER)
                         .setAllowRefresh(false)

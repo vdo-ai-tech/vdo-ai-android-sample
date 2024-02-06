@@ -50,7 +50,7 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
         binding.templateMedium.setVisibility(View.GONE);
 
         VdoAINativeTemplateAd nativeAd = new VdoAINativeTemplateAd.VdoAINativeTemplateAdBuilder()
-                .withContext(this)
+                .withContext(this.getApplicationContext())
                 .setEnvironment(BuildConfig.BUILD_TYPE)
                 .setTemplateView(binding.templateSmall)
                 .setTagName("in-app-sample-n-Z1")
@@ -96,7 +96,7 @@ public class NativeTemplateAdActivity extends AppCompatActivity {
         binding.templateSmall.setVisibility(View.GONE);
         binding.templateMedium.setVisibility(View.VISIBLE);
         VdoAINativeTemplateAd nativeAd = new VdoAINativeTemplateAd.VdoAINativeTemplateAdBuilder()
-                .withContext(this)
+                .withContext(this.getApplicationContext())
                 .setEnvironment(BuildConfig.BUILD_TYPE)
                 .setTemplateView(binding.templateMedium)
                 .setTagName("in-app-sample-n-Z1")
