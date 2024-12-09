@@ -25,6 +25,10 @@
     <item
         android:id="@+id/reward_interstitialAd"
         android:title="Reward InterstitialAd"/>
+
+    <item
+        android:id="@+id/fragmentBanner"
+        android:title="Fragment Banner"/>
     <!--
          <item
              android:id="@+id/video_player_ads"

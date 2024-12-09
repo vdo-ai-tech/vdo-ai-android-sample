@@ -69,6 +69,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this@MainActivity, RewardInterstitialAdActivity::class.java))
                 return true
             }
+
+            R.id.fragmentBanner ->{
+                startActivity(Intent(this@MainActivity, FragmentBannerActivity::class.java))
+                return true
+            }
 //            R.id.video_player_ads ->{
 //                startActivity(Intent(this@MainActivity, VideoAdsActivity::class.java))
 //                return true
