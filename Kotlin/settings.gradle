@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.vdo.ai' }
 
         //required only for example-ironsource and example-sdk
         maven { url "https://android-sdk.is.com/"}
